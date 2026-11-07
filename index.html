@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GAMA CAPS | Gorras streetwear en Colombia</title>
+<meta name="description" content="GAMA CAPS: tienda online de gorras Snapback, Trucker y Dad hat en toda la gama de colores. Ajuste regulable y envíos a todo Colombia. Pide por WhatsApp.">
+<meta property="og:title" content="GAMA CAPS | Gorras streetwear en Colombia">
+<meta property="og:description" content="Gorras en toda la gama de colores. Envíos a todo Colombia.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#111111">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F4F3;--surface:#FFFFFF;--ink:#121212;--muted:#5E5E5E;--line:#DCDCDA;--soft:#EBEBE9;--orange:#FF5A1F;--accent:#FF5A1F;--black:#111111;--white:#FFFFFF;color-scheme:light;
+--display:"Archivo","Arial Narrow","Helvetica Neue",Arial,sans-serif;--body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D0D0D;--surface:#1A1A1A;--ink:#F2F2F0;--muted:#A8A8A4;--line:#2E2E2E;--soft:#242424;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D0D0D;--surface:#1A1A1A;--ink:#F2F2F0;--muted:#A8A8A4;--line:#2E2E2E;--soft:#242424;color-scheme:dark}
+html{height:auto;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}img{max-width:100%}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.disp{font-family:var(--display);font-stretch:118%;font-weight:800;letter-spacing:-.01em;text-transform:uppercase;line-height:.95}
+
+/* Header */
+.bar{position:sticky;top:0;z-index:50;background:rgba(17,17,17,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;padding-top:env(safe-area-inset-top,0px)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:900 1.45rem/1 var(--display);font-stretch:125%;letter-spacing:.04em;text-decoration:none;color:#fff}
+.logo b{color:var(--orange);font-weight:900}
+.menu{display:flex;align-items:center;gap:30px}
+.menu a{text-decoration:none;font-weight:600;font-size:.95rem;color:#E6E6E4}
+.menu a:not(.btn):hover{color:var(--orange)}
+.burger{display:none;background:none;border:0;color:#fff;width:44px;height:44px;cursor:pointer;padding:0}
+.burger span{display:block;width:24px;height:2px;background:#fff;margin:6px auto;transition:transform .3s,opacity .3s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--orange);color:#fff;font:800 .88rem var(--display);font-stretch:112%;letter-spacing:.06em;text-transform:uppercase;padding:15px 28px;border-radius:2px;text-decoration:none;border:2px solid var(--orange);cursor:pointer;transition:transform .25s,background .25s,color .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(255,90,31,.35)}
+.btn.line{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn.line:hover{background:#fff;color:#111;box-shadow:none}
+.btn.sm{padding:10px 18px;font-size:.78rem}
+
+/* Hero */
+.hero{background:var(--black);color:#fff;position:relative;overflow:hidden}
+.hero .big{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);font:900 clamp(9rem,30vw,27rem)/.8 var(--display);font-stretch:125%;color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.09);white-space:nowrap;pointer-events:none;user-select:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:24px;align-items:center;min-height:calc(100vh - 68px);min-height:calc(100svh - 68px);padding-top:48px;padding-bottom:48px}
+.hero h1{font-size:clamp(2.8rem,6.6vw,5.6rem);margin:0 0 22px}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero p{color:#C9C9C6;max-width:44ch;font-size:1.12rem;margin:0 0 32px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.stage{text-align:center}
+.stage svg{width:100%;max-width:560px;height:auto;color:var(--accent);filter:drop-shadow(0 30px 40px rgba(0,0,0,.6));transition:color .4s;animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(40px) rotate(-4deg)}to{opacity:1;transform:none}}
+.pick{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:10px}
+.pick .nm{font:700 .95rem var(--body);color:#E6E6E4;min-width:132px;text-align:right}
+.swatches{display:flex;gap:10px}
+.sw{width:34px;height:34px;border-radius:50%;border:2px solid #111;box-shadow:0 0 0 2px rgba(255,255,255,.3);cursor:pointer;padding:0;transition:transform .2s}
+.sw:hover{transform:scale(1.12)}
+.sw[aria-pressed="true"]{box-shadow:0 0 0 3px #fff}
+
+/* Secciones */
+section{padding:96px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+h2{font-size:clamp(2.1rem,4.6vw,3.6rem);margin:0}
+.sub{color:var(--muted);max-width:52ch;margin:14px 0 0}
+.filters{display:grid;gap:14px;margin-bottom:34px}
+.frow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.flabel{font:700 .85rem var(--body);color:var(--muted);min-width:78px}
+.chip{font:600 .92rem var(--body);padding:9px 20px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.dot{width:32px;height:32px;border-radius:50%;border:2px solid var(--surface);box-shadow:0 0 0 1.5px var(--line);cursor:pointer;padding:0;transition:transform .2s}
+.dot:hover{transform:scale(1.1)}
+.dot[aria-pressed="true"]{box-shadow:0 0 0 3px var(--ink)}
+.dot.all{background:conic-gradient(#E4572E,#F2B705,#2E9E6B,#2F6FDE,#8A4FD6,#C8283B,#E4572E)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(262px,1fr));gap:24px}
+.card{background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .35s,box-shadow .35s}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 40px -18px rgba(0,0,0,.28)}
+.ph{background:var(--soft);aspect-ratio:1/.86;display:grid;place-items:center;overflow:hidden;position:relative}
+.ph svg{width:84%;height:auto;transition:transform .5s}
+.ph img{width:100%;height:100%;object-fit:cover}
+.card:hover .ph svg{transform:scale(1.07) rotate(-3deg)}
+.tag{position:absolute;left:14px;top:14px;background:var(--black);color:#fff;font:700 .72rem var(--display);font-stretch:110%;letter-spacing:.08em;padding:5px 10px;text-transform:uppercase}
+.info{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+.info h3{font:800 1.18rem/1.15 var(--display);font-stretch:108%;text-transform:uppercase;margin:0 0 6px}
+.meta{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.93rem;margin:0 0 18px}
+.meta i{width:12px;height:12px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.2)}
+.row{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.price{font:800 1.3rem var(--display);font-stretch:105%}
+.none{padding:40px 0;color:var(--muted)}
+
+/* Video */
+.video{background:var(--bg)}
+.vgrid{display:grid;grid-template-columns:minmax(0,380px) 1fr;gap:72px;align-items:center;justify-content:center}
+.frame{background:#111;border-radius:30px;padding:10px;box-shadow:0 30px 60px -22px rgba(0,0,0,.5);width:100%;max-width:380px}
+.frame video{display:block;width:100%;aspect-ratio:9/16;border-radius:21px;background:#000;object-fit:cover}
+.vtxt h2{margin-bottom:18px}
+.vtxt p{color:var(--muted);max-width:44ch;margin:0 0 28px}
+.vtxt .btn.dark{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+
+/* Beneficios */
+.benefits{background:var(--surface);border-block:1px solid var(--line)}
+.bgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:36px;margin-top:44px}
+.bgrid svg{width:46px;height:46px;stroke:var(--orange);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-bottom:16px}
+.bgrid h3{font:800 1.02rem var(--display);font-stretch:108%;text-transform:uppercase;margin:0 0 6px}
+.bgrid p{margin:0;color:var(--muted);font-size:.97rem}
+
+/* Marca */
+.brand{background:var(--black);color:#fff;position:relative;overflow:hidden}
+.brand .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center}
+.brand h2{font-size:clamp(2.2rem,5.2vw,4.4rem);margin-bottom:24px}
+.brand p{color:#C9C9C6;max-width:48ch;margin:0 0 14px}
+.spectrum{display:grid;grid-template-columns:repeat(6,1fr);height:min(360px,60vw);border:1px solid #333}
+.spectrum div{display:flex;align-items:end;padding:10px 8px;font:700 .72rem var(--display);font-stretch:110%;letter-spacing:.06em;text-transform:uppercase;color:#fff;writing-mode:vertical-rl;transform:rotate(180deg);text-shadow:0 1px 2px rgba(0,0,0,.4)}
+
+/* Contacto + footer */
+.cta-band{background:var(--orange);color:#111;padding:64px 0}
+.cta-band .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+.cta-band h2{font-size:clamp(1.8rem,4vw,3rem)}
+.cta-band .btn{background:#111;border-color:#111;color:#fff}
+footer{background:var(--black);color:#C9C9C6;padding:64px 0 32px;font-size:.96rem}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:44px}
+footer h4{font:800 .85rem var(--display);font-stretch:110%;letter-spacing:.08em;text-transform:uppercase;color:#fff;margin:0 0 14px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+footer a{text-decoration:none}footer a:hover{color:var(--orange)}
+.legal{border-top:1px solid #2E2E2E;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:.88rem}
+.fab{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.35);transition:transform .25s}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:30px;height:30px;fill:#fff}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .burger{display:block}
+  .menu{position:absolute;left:0;right:0;top:100%;background:#111;flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 24px;border-top:1px solid #2E2E2E;display:none}
+  .menu.open{display:flex}
+  .menu a{padding:15px 0;border-bottom:1px solid #262626}
+  .menu .btn{margin-top:16px;border-bottom:2px solid var(--orange)}
+  .hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:40px}
+  .hero .stage{order:-1}
+  .brand .wrap,.fgrid{grid-template-columns:1fr}
+  .vgrid{grid-template-columns:1fr;gap:36px;justify-items:center}
+  .vtxt{text-align:center}.vtxt p{margin-inline:auto}
+  section{padding:72px 0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="GAMA CAPS, inicio">GAMA<b>CAPS</b></a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#coleccion">Colección</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#marca">La marca</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn sm" id="waNav" href="#" target="_blank" rel="noopener">Comprar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="hero">
+    <div class="big" aria-hidden="true">GAMA</div>
+    <div class="wrap">
+      <div>
+        <h1 class="disp">Gorras con <em>carácter</em> urbano</h1>
+        <p>Snapback, Trucker y Dad hat en toda la gama de colores. Ajuste regulable y envíos a todo Colombia.</p>
+        <div class="cta">
+          <a class="btn" href="#coleccion">Explorar colección</a>
+          <a class="btn line" id="waHero" href="#" target="_blank" rel="noopener">Comprar ahora</a>
+        </div>
+      </div>
+      <div class="stage">
+        <svg id="heroCap" viewBox="0 0 260 170" role="img" aria-label="Gorra GAMA CAPS en el color elegido"></svg>
+        <div class="pick">
+          <span class="nm" id="heroName"></span>
+          <div class="swatches" id="swatches" role="group" aria-label="Elegir color de la gorra"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="video" id="video">
+    <div class="wrap vgrid">
+      <div class="frame rv"><video controls playsinline preload="metadata" poster="video/poster.jpg" aria-label="Video comercial de GAMA CAPS"><source src="video/gama-caps.mp4" type="video/mp4">Tu navegador no puede reproducir este video.</video></div>
+      <div class="vtxt rv">
+        <h2 class="disp">GAMA CAPS en movimiento</h2>
+        <p>Mira cómo se ve la marca y después elige tu gorra en la colección.</p>
+        <a class="btn dark" href="#coleccion">Ver colección</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="coleccion">
+    <div class="wrap">
+      <div class="head rv">
+        <div>
+          <h2 class="disp">Colección</h2>
+          <p class="sub">Filtra por estilo o por color. Cada gorra se pide directo por WhatsApp con su nombre, color y precio.</p>
+        </div>
+      </div>
+      <div class="filters rv">
+        <div class="frow"><span class="flabel">Estilo</span><div class="frow" id="chips" role="group" aria-label="Filtrar por estilo"></div></div>
+        <div class="frow"><span class="flabel">Color</span><div class="frow" id="dots" role="group" aria-label="Filtrar por color"></div></div>
+      </div>
+      <div class="grid" id="grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="benefits" id="beneficios">
+    <div class="wrap">
+      <h2 class="disp rv">Por qué elegir GAMA CAPS</h2>
+      <div class="bgrid">
+        <div class="rv"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l5.4 11 12.1 1.7-8.8 8.5 2.1 12L24 32.5 13.2 38.2l2.1-12L6.5 17.7 18.6 16z"/></svg><h3>Calidad</h3><p>Productos pensados para verse bien y durar.</p></div>
+        <div class="rv"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="18" r="8"/><circle cx="32" cy="18" r="8"/><circle cx="24" cy="31" r="8"/></svg><h3>Variedad</h3><p>Colores y estilos para cada outfit.</p></div>
+        <div class="rv"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 26c0-10 7-17 16-17s16 7 16 17M6 26h36M14 26v8h20v-8M20 38h8"/></svg><h3>Ajuste regulable</h3><p>Cómodas y adaptables a tu medida.</p></div>
+        <div class="rv"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 14h26v18H4zM30 20h9l5 6v6H30zM13 36a4 4 0 100 .1M36 36a4 4 0 100 .1"/></svg><h3>Envíos a todo Colombia</h3><p>Tu gorra llega donde estés.</p></div>
+        <div class="rv"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 10h36v24H22l-9 7v-7H6z"/></svg><h3>Atención personalizada</h3><p>Te asesoramos por WhatsApp.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brand" id="marca">
+    <div class="wrap">
+      <div class="rv">
+        <h2 class="disp">Toda la gama en tu cabeza</h2>
+        <p>GAMA CAPS nace de una idea simple: que cada persona encuentre la gorra que va con su estilo y su color.</p>
+        <p>Por eso trabajamos una gama amplia de tonos y modelos, con un look urbano, limpio y fácil de combinar.</p>
+        <p><a class="btn" style="margin-top:14px" href="#coleccion">Ver la colección</a></p>
+      </div>
+      <div class="spectrum rv" id="spectrum" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <div class="cta-band" id="contacto">
+    <div class="wrap">
+      <h2 class="disp">¿Cuál será la tuya?</h2>
+      <a class="btn" id="waBand" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="#inicio">GAMA<b>CAPS</b></a>
+        <p style="max-width:34ch;margin-top:14px">Gorras en toda la gama de colores. Envíos a todo Colombia.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul><li><a href="#coleccion">Colección</a></li><li><a href="#beneficios">Beneficios</a></li><li><a href="#marca">La marca</a></li><li><a href="#contacto">Contacto</a></li></ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul id="contactList"><li><a id="waFoot" href="#" target="_blank" rel="noopener">WhatsApp</a></li></ul>
+      </div>
+    </div>
+    <div class="legal"><span>© 2026 GAMA CAPS. Todos los derechos reservados.</span><span>Colombia</span></div>
+  </div>
+</footer>
+
+<a class="fab" id="waFab" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.3.6 4.5 1.8 6.4L3 29l7-1.8c1.9 1 4 1.6 6 1.6 7.2 0 13-5.700 13-12.800S23.200 3 16 3zm0 23.400c-1.900 0-3.800-.5-5.400-1.500l-.4-.2-4.100 1 1.100-4-.3-.4a10.300 10.300 0 01-1.600-5.500C5.300 9.900 10.100 5.300 16 5.300s10.700 4.600 10.700 10.500S21.900 26.400 16 26.400zm5.900-7.700c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.700 8.700 0 01-4.300-3.700c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.400 1 2.800 1.200 3c.1.200 2 3.100 4.900 4.300 1.800.8 2.500.9 3.400.7.600-.1 1.900-.8 2.200-1.500s.3-1.400.2-1.500-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script>
+// ===== CONFIGURACIÓN (edita solo aquí) =====
+const WHATSAPP = "573000000000"; // número de WhatsApp con código de país, sin + ni espacios
+const SOCIAL = { instagram: "", facebook: "", tiktok: "" }; // pega aquí el enlace de cada red; las vacías no se muestran
+
+const colors = [
+  {n:"Naranja Caribe", c:"#E4572E"},{n:"Amarillo Sol", c:"#F2B705"},{n:"Verde Selva", c:"#2E9E6B"},
+  {n:"Azul Mar", c:"#2F6FDE"},{n:"Violeta Noche", c:"#8A4FD6"},{n:"Rojo Pasión", c:"#C8283B"}
+];
+// Para usar una foto real en un producto, pon en "img" una imagen incrustada (data:image/...).
+const products = [
+  {name:"Snapback Clásica", type:"Snapback", color:"#2F6FDE", cn:"Azul Mar", price:59900, img:""},
+  {name:"Trucker Malla", type:"Trucker", color:"#E4572E", cn:"Naranja Caribe", price:54900, img:""},
+  {name:"Dad Hat Liviana", type:"Dad hat", color:"#2E9E6B", cn:"Verde Selva", price:49900, img:""},
+  {name:"Snapback Plana", type:"Snapback", color:"#F2B705", cn:"Amarillo Sol", price:62900, img:""},
+  {name:"Trucker Urbana", type:"Trucker", color:"#8A4FD6", cn:"Violeta Noche", price:57900, img:""},
+  {name:"Dad Hat Lavada", type:"Dad hat", color:"#C8283B", cn:"Rojo Pasión", price:52900, img:""}
+];
+
+const cap = () => `
+<path d="M38 112C38 46 88 16 138 18c46 2 74 38 74 94z" fill="currentColor"/>
+<path d="M138 18v94" stroke="#000" stroke-opacity=".2" stroke-width="3"/>
+<path d="M88 30c-14 22-18 52-16 82M188 30c10 22 14 52 14 82" stroke="#000" stroke-opacity=".14" stroke-width="3" fill="none"/>
+<circle cx="138" cy="17" r="7" fill="currentColor"/><circle cx="138" cy="17" r="7" fill="#000" fill-opacity=".22"/>
+<path d="M30 112c40 10 120 14 216 0-4-14-30-20-44-20H38z" fill="currentColor"/>
+<path d="M30 112c40 10 120 14 216 0-4-14-30-20-44-20H38z" fill="#000" fill-opacity=".3"/>
+<path d="M38 112h164" stroke="#fff" stroke-opacity=".5" stroke-width="3"/>`;
+const fmt = n => "$" + n.toLocaleString("es-CO");
+const wa = msg => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
+const $ = id => document.getElementById(id);
+
+// Enlaces generales de WhatsApp
+const general = wa("Hola GAMA CAPS, quiero información sobre sus gorras.");
+["waNav","waHero","waBand","waFoot","waFab"].forEach(i => $(i).href = general);
+Object.entries(SOCIAL).forEach(([k,u]) => {
+  if(!u) return;
+  const li = document.createElement("li");
+  li.innerHTML = `<a href="${u}" target="_blank" rel="noopener">${k[0].toUpperCase()+k.slice(1)}</a>`;
+  $("contactList").appendChild(li);
+});
+
+// Menú móvil
+const burger = $("burger"), menu = $("menu");
+burger.onclick = () => {
+  const open = menu.classList.toggle("open");
+  burger.setAttribute("aria-expanded", open);
+  burger.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+};
+menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => { menu.classList.remove("open"); burger.setAttribute("aria-expanded", false); }));
+
+// Hero: selector de color
+$("heroCap").innerHTML = cap();
+colors.forEach((k,i) => {
+  const b = document.createElement("button");
+  b.className = "sw"; b.style.background = k.c; b.setAttribute("aria-label", k.n); b.setAttribute("aria-pressed", i===0);
+  b.onclick = () => {
+    document.documentElement.style.setProperty("--accent", k.c);
+    $("heroName").textContent = k.n;
+    $("swatches").querySelectorAll(".sw").forEach(s => s.setAttribute("aria-pressed", s===b));
+  };
+  $("swatches").appendChild(b);
+});
+$("heroName").textContent = colors[0].n;
+document.documentElement.style.setProperty("--accent", colors[0].c);
+
+// Espectro de marca
+$("spectrum").innerHTML = colors.map(k => `<div style="background:${k.c}">${k.n}</div>`).join("");
+
+// Catálogo con filtros de estilo y color
+let fType = "Todas", fColor = "Todos";
+function render(){
+  const list = products.filter(p => (fType==="Todas" || p.type===fType) && (fColor==="Todos" || p.cn===fColor));
+  $("grid").innerHTML = list.length ? list.map(p => `
+    <article class="card">
+      <div class="ph">${p.img ? `<img src="${p.img}" alt="${p.name} en ${p.cn}" loading="lazy">` : `<svg viewBox="0 0 260 130" style="color:${p.color}" role="img" aria-label="${p.name} en ${p.cn}">${cap()}</svg>`}<span class="tag">${p.type}</span></div>
+      <div class="info">
+        <h3>${p.name}</h3>
+        <p class="meta"><i style="background:${p.color}"></i>${p.cn}</p>
+        <div class="row"><span class="price">${fmt(p.price)}</span>
+        <a class="btn sm" target="_blank" rel="noopener" href="${wa(`Hola GAMA CAPS, quiero pedir la gorra ${p.name} en color ${p.cn} (${fmt(p.price)}).`)}">Comprar</a></div>
+      </div>
+    </article>`).join("") : `<p class="none">No hay gorras con esa combinación. Prueba otro color o estilo.</p>`;
+}
+["Todas", ...new Set(products.map(p => p.type))].forEach((t,i) => {
+  const b = document.createElement("button");
+  b.className = "chip"; b.textContent = t; b.setAttribute("aria-pressed", i===0);
+  b.onclick = () => { fType = t; $("chips").querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", c===b)); render(); };
+  $("chips").appendChild(b);
+});
+const all = document.createElement("button");
+all.className = "dot all"; all.setAttribute("aria-label","Todos los colores"); all.setAttribute("aria-pressed", true);
+$("dots").appendChild(all);
+const dotBtns = [all];
+all.onclick = () => pickColor("Todos", all);
+[...new Map(products.map(p => [p.cn, p.color]))].forEach(([cn,c]) => {
+  const b = document.createElement("button");
+  b.className = "dot"; b.style.background = c; b.setAttribute("aria-label", cn); b.setAttribute("aria-pressed", false);
+  b.onclick = () => pickColor(cn, b);
+  $("dots").appendChild(b); dotBtns.push(b);
+});
+function pickColor(cn, btn){ fColor = cn; dotBtns.forEach(d => d.setAttribute("aria-pressed", d===btn)); render(); }
+render();
+
+// Animación al hacer scroll
+const io = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }), {threshold:.12}) : null;
+document.querySelectorAll(".rv").forEach(el => io ? io.observe(el) : el.classList.add("in"));
+</script>
+</body>
+</html>
